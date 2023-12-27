@@ -31,15 +31,20 @@
 
             <legend>Informações pessoais</legend>
 
-            <div class="input-wrapper">
-              <label for="">Nome</label>
-              <input type="text" id="mentoring-name">
+            <div class="col-2">
+
+              <div class="input-wrapper">
+                <label for="">Nome</label>
+                <input type="text" id="mentoring-name">
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="">Sobrenome</label>
+                <input type="text" id="mentoring-surname">
+              </div>
+
             </div>
 
-            <div class="input-wrapper">
-              <label for="">Sobrenome</label>
-              <input type="text" id="mentoring-surname">
-            </div>
 
             <div class="input-wrapper">
               <label for="">Email <span>(digite um email válido)</span></label>
@@ -78,11 +83,10 @@
 
             <legend>Seus horários disponíveis</legend>
 
+            <span class="lb-style">Primeira mentoria</span>
             <div class="col-3">
-             <legend>Primeira mentoria</legend>
-
               <div class="input-wrapper">
-                <label for="mentoring-date">Data</label>
+                <label for="mentoring-date">Data<span>(DD/MM/AAAA)</span></label>
                 <input type="date" id="mentoring-date" />
               </div>
   
@@ -95,11 +99,13 @@
                 <label for="mentoring-end">Até</label>
                 <input type="time" id="mentoring-end" />
               </div>
+            </div>
 
-              <legend>Segunda mentoria</legend>
 
+            <span class="lb-style">Segunda mentoria</span>
+            <div class="col-3">
               <div class="input-wrapper">
-                <label for="mentoring-date">Data</label>
+                <label for="mentoring-date">Data <span>(DD/MM/AAAA)</span></label>
                 <input type="date" id="mentoring-date" />
               </div>
   
@@ -123,7 +129,7 @@
       </form>
   
       <footer>
-        <input type="submit" class="button" form="my-form" value="Salvar">
+        <input type="submit" class="button" form="my-form" value="Salvar" value="Salvar mentoria">
       </footer>
 
       
